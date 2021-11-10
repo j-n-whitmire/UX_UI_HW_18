@@ -1,0 +1,35 @@
+body{
+    text-align: center;
+    color: black;
+    display: inline;
+    vertical-align: top;
+    width: 23%;
+    height: 100px;
+    padding: 1%;
+    border: 1px black;
+    background-color: #ba9e8a;
+}
+.nav .logo {
+    width: 73%;
+    padding: 1%;
+    text-align: center;
+}
+.nav li{
+    width: 50%;
+    text-align: center;
+}
+.herolmg {
+    height:600px;
+    padding: 25px;
+}
+.footer {
+    background-color: #373738;
+}
+.footer ul {
+    padding:25px;
+    display: inline-block;
+    vertical-align: top;
+}
+.footer li{
+    padding: 20px;
+}
