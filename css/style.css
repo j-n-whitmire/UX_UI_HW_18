@@ -1,3 +1,7 @@
+.flex-container{
+    align-items: flex-start;
+}
+
 body{
     text-align: center;
     color: black;
@@ -16,7 +20,7 @@ body{
 }
 .nav li{
     width: 50%;
-    text-align: center;
+    text-align: left;
 }
 .herolmg {
     height:600px;
