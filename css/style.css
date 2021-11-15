@@ -1,5 +1,6 @@
 .flex-container{
     align-items: flex-start;
+    justify-content: center;
 }
 
 body{
@@ -7,6 +8,7 @@ body{
     color: black;
     display: inline;
     vertical-align: top;
+    margin: 0;
     width: 23%;
     height: 100px;
     padding: 1%;
@@ -14,7 +16,7 @@ body{
     background-color: #ba9e8a;
 }
 .nav .logo {
-    width: 73%;
+    width: 53%;
     padding: 1%;
     text-align: center;
 }
@@ -37,3 +39,13 @@ body{
 .footer li{
     padding: 20px;
 }
+
+@media screen and (max-width: 600px){
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
