@@ -10,26 +10,22 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <header class="herolmg">
-    <nav> 
-        <div class="inline-block"></div>
-        <div class="container">
-            <div class="row">
-              <div class="col">
-                About
-              </div>
-              <div class="col">
-                Skills
-              </div>
-              <div class="col">
-                Work
-              </div>
-              <div class="col">
-                Contact
-              </div>
-            </div>
-          </div>
-        </nav>
         </header>
+        <div class="container">
+          <div class="row">
+            <div class="about">
+              About
+            </div>
+            <div class="skills">
+              Skills
+            </div>
+            <div class="work">
+              Work
+            </div>
+            <div class="contact">
+              Contact
+            </div>
+        </section>
     <img src="images/headshot1000.jpg">
     <!--About me information-->
     <body>
@@ -38,7 +34,7 @@ This is the about me paragraph.
     </p>
     <button
        type= "button">"Download Resume"</button>
-   <img src="images/jnwlogo10.jpg" alt="JNW Logo"></img:src> 
+   <img src="images/jnwlogo10.jpg" alt="JNW Logo" height:100px, width: 100px></img:src> 
 <!--My UX Work section coded using CSS flex-->
 <section>
     <h1>My Work</h1>
@@ -49,15 +45,19 @@ This is the about me paragraph.
        <button>View this project</button>
        <div>
            <img>
-           <h4></h4>
+           <div class="subHeading">
+            <h2>Case Studies</h2>
+           </div>
            <p>This is a paragraph</p>
            <button>View this project</button>
-       </div>
-       <div class="grid">
-        <div class="g-col-6 g-col-md-4">Travel App Casestudy</div>
-        <div class="g-col-6 g-col-md-4">Incentify Casestudy</div>
-        <div class="g-col-6 g-col-md-4">K9 Angels Rescue Casestudy</div>
-      </div>
+           <section id="casestudyGrid">
+            <div id="k9" class="casestudyGrid">
+                <div class="heading">K9 Angels Rescue</div>
+                  <div id="incentify" class="casestudyGrid">
+                    <div class="heading">Incentify Task App</div>
+                    <div id="away" class="casestudyGrid">
+                      <div class="heading">Away Travel App</div>
+                </div>
    </div>
 </section>
 <!--My UX Skills section coded using CSS flex-->
@@ -76,16 +76,16 @@ This is the about me paragraph.
 <footer>
     <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="about">
             About
           </div>
-          <div class="col">
+          <div class="skills">
             Skills
           </div>
-          <div class="col">
+          <div class="work">
             Work
           </div>
-          <div class="col">
+          <div class="contact">
             Contact
           </div>
 </footer>
