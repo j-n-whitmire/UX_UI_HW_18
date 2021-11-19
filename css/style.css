@@ -1,34 +1,91 @@
-.flex-container{
-    align-items: flex-start;
-    justify-content: center;
-}
 
+@media screen and (max-width: 600px){
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
 body{
-    text-align: center;
-    color: black;
-    display: inline;
-    vertical-align: top;
-    margin: 0;
-    width: 23%;
-    height: 100px;
-    padding: 1%;
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: 60px auto 60px;
     border: 1px black;
     background-color: #ba9e8a;
 }
-.nav .logo {
-    width: 53%;
-    padding: 1%;
-    text-align: center;
-}
+.logo {
+    display: center;
+    align-content: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+  }
+
 .nav li{
     width: 50%;
-    text-align: left;
+    text-align: center;
 }
 .herolmg {
-    height:600px;
+    height:400px;
     padding: 25px;
 }
-.footer {
+/*UX Skills Category*/
+.flexContainer {
+    display: flex;
+    padding: 60px 30px;
+  }
+  .flexContainer div {
+    width: 33%;
+    padding: 25px;
+  }
+
+/* My Work Category Grid CSS */
+.myWork {
+    padding: 60px 30px;
+    padding-top: 0;
+    background-color: #ba9e8a;
+  }
+  .workGrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 350px 350px 350px;
+    grid-template-areas:
+    "k9 content1"
+    "gov content2"
+    "incentify content3"
+    ;
+  }
+  .workGrid img {
+    width: 50%;
+    max-width: 250px;
+    margin: 0 auto;
+    display: block;
+  }
+  .k9 {
+    grid-area: k9;
+  }
+  .gov {
+    grid-area: gov;
+   
+  }
+  .incentify {
+    grid-area: incentify;
+  }
+  .k9, .gov, .incentify, .content1, .content2, .content3 {
+    padding: 80px;
+  }
+  .content1 {
+    grid-area: content1;
+  }
+  .content2 {
+    grid-area: content2;
+  }
+  .content3 {
+    grid-area: content3;
+  }
+  .footer {
     background-color: #373738;
 }
 .footer ul {
@@ -39,13 +96,3 @@ body{
 .footer li{
     padding: 20px;
 }
-
-@media screen and (max-width: 600px){
-    .topnav.responsive {position: relative;}
-    .topnav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-}
-
