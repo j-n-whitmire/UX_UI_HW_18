@@ -1,12 +1,5 @@
 
-@media screen and (max-width: 600px){
-    .topnav.responsive {position: relative;}
-    .topnav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-}
+
 body{
     display: grid;
     grid-template-columns: 30% auto;
@@ -95,4 +88,25 @@ body{
 }
 .footer li{
     padding: 20px;
+}
+@media screen and (max-width: 600px){
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .workGrid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 350px 350px 350px 350px 350px 350px;
+        grid-template-areas:
+        "k9"
+        "content1"
+        "gov"
+        "content2"
+        "incentify"
+        "content3"
+        ;
+      }
 }
